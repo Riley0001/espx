@@ -28,14 +28,15 @@ local function createEsp(player)
    drawings.box.Filled = false;
    drawings.box.Color = settings.defaultcolor;
    drawings.box.Visible = false;
-   drawings.box.ZIndex = 2;
+   drawings.box.ZIndex = 0.5;
+   drawings.box.Transparency = 0.25;
  
    drawings.boxoutline = newDrawing("Square");
    drawings.boxoutline.Thickness = 3;
    drawings.boxoutline.Filled = false;
    drawings.boxoutline.Color = Color3.fromRGB(255,0,255);
    drawings.boxoutline.Visible = false;
-   drawings.boxoutline.ZIndex = 1;
+   drawings.boxoutline.ZIndex = 0.5;
  
    espCache[player] = drawings;
 end
